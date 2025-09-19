@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link rel="stylesheet" href="css\style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body bgcolor="pink">
+
+
+    <header>
+        <h1 class="text-3xl font-bold"> ToDo List</h1>
+    </header>
+
+    <main>
+        <form>
+            <input type="text" id="todoInput" placeholder="add your new ToDo" class="border border-gray-200 raounded p-2 mb-2 w-full">
+            <input type="date" id="todoDate" name="dd/mm/yy" action="/action_page.php" type="submit" class="border border-gray-200 raounded p-2 mb-2 w-full">
+            <button type="button" onclick="addToDo()" class="bg-blue-500 text-with rounded p-2 mt-2 w-full"> add ToDo </button>
+        </form>
+
+        <section class="mt-6">
+           <header>
+            <h2 class="text-2xl font-bold"> your todo : </h2>
+        </header>
+
+        
+
+
+        <header>
+            <table class="table-auto w-full border-collapse border border-gray-300 mt-4">
+  <thead>
+    <tr class="bg-gray-100">
+      <th class="border px-2 py-1">No</th>
+      <th class="border px-2 py-1">ToDo</th>
+      <th class="border px-2 py-1">Tanggal</th>
+      <th class="border px-2 py-1 w-2">Aksi</th>
+    
+    </tr>
+  </thead>
+  <tbody id="todoList"></tbody>
+
+
+
+
+
+
+
+  
+</table>
+
+        </header>
+        <header>
+            <input type="text" id="filter-input"  placeholder="cari todo" onkeyup="filterToDo()" class="border p-2 rounded mt-2 w-full"/>
+        </header>
+        
+        </section>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2025 website saya </p>
+    </footer>
+    <script src="js\script.js"></script>
+</body>
+
+</html>

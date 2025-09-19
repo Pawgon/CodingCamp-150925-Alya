@@ -1,0 +1,20 @@
+body {
+    min-height: 100vh;
+    text-align: -webkit-center;
+    align-content: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+
+}
+
+.todo-item {
+    margin: 6px 0;
+    padding: 6px 10px;
+    background-color: black;
+    border-radius: 6px;
+
+}
+
